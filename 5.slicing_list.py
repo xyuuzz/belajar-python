@@ -26,8 +26,11 @@ print(list_slicing[::2])
 
 print(list_slicing[:]) # mengakses semua value nya, sama seperti yang dilakukan pada slicing string
 
-
 # print(list_slicing[::-1]) # membalik value nya, 
 
 kebalikan_list_slicing = list_slicing[::-1] # mempunyai value list yang value list tersebut adalah kebalikan dari value list list_slicing
 print(kebalikan_list_slicing)
+
+
+abc = list_slicing[2::-1] # dimulai dari indeks ke 2, karena jarak nya adalah minus, maka behavior nya mundur, dan berakhir di index ke 0
+print(abc)
