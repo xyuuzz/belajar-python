@@ -39,3 +39,54 @@ ganti_isi = {
 } 
 ganti_isi["diganti"] = "ITEM INI SUDAH DIGANTI"
 print(ganti_isi["diganti"]) # value nya bukan lagi 22, namun berbeda karena sudah diganti/ditimpa 
+
+
+# Contoh method di dictionary
+method_dict = {
+    "sayang" : "apa??",
+    "gapapa" : "mengcape"
+}
+    # 1. keys()
+    # => method keys akan mengembalikan key yang ada di dalam dictionary 
+method_dict_keys = method_dict.keys()
+
+    # 2. values()
+    # => method values akan mengembalikan value yang dimiliki oleh key di dalam Dictionary
+method_dict_values = method_dict.values()
+
+    # 3. items()
+    # => adalah method yang mengembalikan sebuah nested tuple yang disetiap tuple nya berisi key dan value dari sebuah dictionary
+method_dict_items = method_dict.items()
+
+# Method keys() dan values() menghasilkan sebuah array yang dapat di looping menggunakan for in, namun tidak dapat diakses menggunakan indeks
+
+
+# Menggunakan perulangan untuk menge-print dictionary
+loop_dict = {
+    "ke1" : "ini ke 1",
+    "ke2" : "ini ke 2",
+    "ke3" : "ini ke 3",
+    "ke4" : "ini ke 4",
+    "ke5" : "ini ke 5"
+}
+
+    # => dictionary merupakan tipe data yang memiliki sifat itterable, sehingga kita dapat menggunakan for in, namun for in hanya akan mengembalikan key nya tidack dengan value nya.
+for key in loop_dict :
+    print(loop_dict[key])
+    
+    # => mengakses dictionary menggunakan method items() 
+for key,value in loop_dict.items() : 
+    # kenapa ada 2 variabel diatas? karena tipe data tuple memiliki sifat yang dapat dipecah..
+    print("%s : %s" % (key, value) ) # cara singkat penulisan format
+
+
+# Menghapus pasangan key dan value dari dictionary
+    # => dictionary juga dapat menggunakan method pop seperti list, yang fungsinya untuk menghapus element, namun berbeda dengan list, pada dictionary argument yang dikirimkan adalah nama key nya.
+dic = { # buat dic
+    "anjay" : 11
+}
+dic["mantab"] = 12 # buat pasangan key value baru
+dic["anjay"] = 1000 # update value 
+dic.pop("anjay") # hapus pasangan key dan value dengan indeks "anjay"
+
+
