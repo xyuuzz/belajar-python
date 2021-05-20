@@ -1,5 +1,10 @@
 {
     "terminal.integrated.cursorStyle": "line",
     "editor.cursorSmoothCaretAnimation": true,
-    "editor.cursorBlinking": "expand"
+    "editor.cursorBlinking": "expand",
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "ostream": "cpp"
+    },
+    "python.pythonPath": "/home/xyuuz/anaconda3/bin/python"
 }
