@@ -45,6 +45,7 @@ def cek_kata(kalimat) :
     # atau kita juga dapat menggunakan syntax berikut : 
     return "python" in kalimat.lower() 
     # jika ada kata python di var kalimat (huruf kecil semua) maka kembalikan True jika tidak kembalikan False
+
 # kalimat = input("Masukan kalimat yang anda pikirkan : ")
 # print(cek_kata(kalimat))
 
@@ -74,5 +75,4 @@ def gabung(*args, **kwargs) :
     print("%a adalah args\n%a adalah kwargs"%(args, kwargs))
 
 gabung(1,2,3, sapa="hai")  
-# sapa hai masuk ke kwaqgs, argument sebelumnya masuk ke args
-
+# dict  dengan key sapa dan value hai masuk ke kwaqgs, argument sebelumnya masuk ke args
